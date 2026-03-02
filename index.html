@@ -3,173 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Baba Mobile Coder - High Tech Maths</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Bulk H1 Optimizer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="app">
-      <header class="app-header">
-        <div class="logo">
-          <span class="logo-mark"></span>
-          <div>
-            <p class="logo-title">Baba Mobile Coder</p>
-            <p class="logo-subtitle">High Tech Maths Studio</p>
-          </div>
-        </div>
-        <button class="primary-btn">Start Session</button>
+    <main class="container">
+      <header>
+        <h1>Bulk Excel H1 Optimizer</h1>
+        <p>
+          Paste rows from Excel (<strong>URL</strong> + <strong>H1</strong>). The tool rewrites each H1 to stay natural and keep
+          important keyword + pricing intent where possible, targeting <strong>65 characters or fewer</strong>.
+        </p>
       </header>
 
-      <main class="app-main">
-        <section class="hero">
-          <div class="hero-copy">
-            <span class="pill">Quantum-grade math intelligence</span>
-            <h1>Build, reason, and code on the go with Baba's high-tech maths skill.</h1>
-            <p>
-              A mobile-first coding environment that fuses symbolic math, algorithm design, and real-time
-              collaboration into a smooth, futuristic workflow.
-            </p>
-            <div class="hero-actions">
-              <button class="primary-btn">Launch Math Lab</button>
-              <button class="ghost-btn">Explore Skill Modules</button>
-            </div>
-            <div class="hero-metrics">
-              <div>
-                <h3>98%</h3>
-                <p>Proof accuracy</p>
-              </div>
-              <div>
-                <h3>24/7</h3>
-                <p>Problem solving</p>
-              </div>
-              <div>
-                <h3>6+</h3>
-                <p>Math engines</p>
-              </div>
-            </div>
-          </div>
-          <div class="hero-visual">
-            <div class="glass-card">
-              <div class="card-header">
-                <h4>Live Math Trace</h4>
-                <span class="status">Syncing</span>
-              </div>
-              <div class="trace">
-                <div>
-                  <p>∫ e^(x²) dx</p>
-                  <small>Symbolic flow</small>
-                </div>
-                <div>
-                  <p>Gradient descent ▸ 0.012</p>
-                  <small>Optimizer loop</small>
-                </div>
-                <div>
-                  <p>Fourier mesh ▸ 128k nodes</p>
-                  <small>Signal decomposition</small>
-                </div>
-              </div>
-              <div class="code-preview">
-                <span>// baba-high-tech-maths</span>
-                <p>solve.matrix({ mode: "tensor" })</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <section class="card">
+        <label for="bulkInput">Paste Excel rows (tab-separated)</label>
+        <textarea
+          id="bulkInput"
+          rows="10"
+          placeholder="URL\tH1\nhttps://example.com/page\tAffordable SEO Services Pricing Plans for Small Business"
+        ></textarea>
 
-        <section class="skills">
-          <h2>High Tech Maths Skill Stack</h2>
-          <div class="skills-grid">
-            <article class="skill-card">
-              <h3>Symbolic Proof Engine</h3>
-              <p>Auto-derive proofs, explain reasoning, and validate steps with confidence scores.</p>
-              <span>Newton + Lean logic</span>
-            </article>
-            <article class="skill-card">
-              <h3>Algorithmic Composer</h3>
-              <p>Generate optimized code in Python, Swift, or Kotlin with performance insights.</p>
-              <span>GPU-ready</span>
-            </article>
-            <article class="skill-card">
-              <h3>Vision Geometry Lab</h3>
-              <p>Sketch, annotate, and transform geometry directly on touch-first canvases.</p>
-              <span>AR compatible</span>
-            </article>
-            <article class="skill-card">
-              <h3>Neural Equation Solver</h3>
-              <p>Blend numerical solvers with neural nets for faster convergence.</p>
-              <span>Hybrid AI</span>
-            </article>
-          </div>
-        </section>
+        <div class="actions">
+          <button id="optimizeBtn" class="btn primary">Optimize H1s</button>
+          <button id="demoBtn" class="btn ghost">Load Demo Data</button>
+          <button id="copyBtn" class="btn ghost" disabled>Copy Output TSV</button>
+        </div>
 
-        <section class="workspace">
-          <div class="workspace-header">
-            <h2>Mobile Code Workspace</h2>
-            <div class="workspace-controls">
-              <button class="ghost-btn">Import Problem</button>
-              <button class="primary-btn">Run Simulation</button>
-            </div>
-          </div>
-          <div class="workspace-body">
-            <div class="editor">
-              <div class="editor-tabs">
-                <button class="tab active">solver.ts</button>
-                <button class="tab">visualizer.swift</button>
-                <button class="tab">notes.md</button>
-              </div>
-              <pre class="editor-content"><code>const solver = BabaMath.configure({
-  precision: "quantum",
-  mode: "tensor",
-});
+        <p class="hint">
+          Tip: You can paste multiple rows directly from Excel/Google Sheets.
+        </p>
+      </section>
 
-export function optimize(signal) {
-  const mesh = solver.fourierMesh(signal, 128000);
-  return solver.gradientDescent(mesh, {
-    decay: 0.0012,
-    explain: true,
-  });
-}
-</code></pre>
-            </div>
-            <div class="workspace-side">
-              <div class="panel">
-                <h4>Math Insights</h4>
-                <ul>
-                  <li>Step-by-step proof walkthrough</li>
-                  <li>Energy function minimized 12%</li>
-                  <li>Topology stable across 3 iterations</li>
-                </ul>
-                <button class="ghost-btn">Export Report</button>
-              </div>
-              <div class="panel">
-                <h4>Collaboration</h4>
-                <p>Invite peers and sync whiteboards in real time.</p>
-                <div class="avatars">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <button class="primary-btn">Start Co-Lab</button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+      <section id="resultSection" class="card hidden">
+        <h2>Optimized Output</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>URL</th>
+                <th>Original H1</th>
+                <th>Original Length</th>
+                <th>Optimized H1</th>
+                <th>New Length</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="resultBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
 
-      <footer class="app-footer">
-        <nav class="bottom-nav">
-          <a class="active" href="#">Dashboard</a>
-          <a href="#">Problems</a>
-          <a href="#">Workspace</a>
-          <a href="#">Library</a>
-        </nav>
-      </footer>
-    </div>
     <script src="app.js"></script>
   </body>
 </html>
